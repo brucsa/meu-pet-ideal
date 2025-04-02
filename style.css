@@ -85,7 +85,7 @@ nav a:hover {
 
 #banner-texto h1 {
     font-family: var(--font-titulo); /* Usa a fonte de títulos */
-    font-size: 1.8rem; /* Define o tamanho do título */
+    font-size: 1rem; /* Define o tamanho do título */
     margin-bottom: 10px; /* Adiciona espaço abaixo do título */
 }
 
@@ -96,7 +96,7 @@ nav a:hover {
     text-decoration: none; /* Remove sublinhado do botão */
     border-radius: 5px; /* Arredonda as bordas do botão */
     font-family: var(--font-titulo); /* Usa a fonte de títulos */
-    font-size: 1rem; /* Define o tamanho do texto do botão */
+    font-size: 0.7rem; /* Define o tamanho do texto do botão */
     transition: background-color 0.3s ease; /* Adiciona uma transição suave ao passar o mouse */
 }
 
