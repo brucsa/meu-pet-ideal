@@ -1,0 +1,392 @@
+/* Reset básico */
+* {
+    margin: 0; /* Remove margens padrão de todos os elementos */
+    padding: 0; /* Remove preenchimentos padrão de todos os elementos */
+    box-sizing: border-box; /* Garante que o padding e a borda estejam incluídos na largura/altura total dos elementos */
+}
+
+/* Variáveis */
+:root {
+    --branco: #f5f5f5; /* Cor de fundo principal */
+    --rosa: #ffcace; /* Cor secundária (rosa pastel) */
+    --verde: #4c9986; /* Cor terciária (verde mint) */
+    --destaque: #ffb480; /* Cor de destaque (laranja claro) */
+    --cinza: #333; /* Cor do texto principal */
+    --h1: 2rem; /* Tamanho padrão para títulos h1 */
+    --font-titulo: "Poppins", sans-serif; /* Fonte usada para títulos */
+    --font-texto: "Open Sans", sans-serif; /* Fonte usada para textos */
+}
+
+/* Estilos globais para o corpo da página */
+body {
+    font-family: var(--font-texto); /* Define a fonte padrão para todo o texto */
+    line-height: 1.6; /* Espaçamento entre linhas para melhor legibilidade */
+    color: var(--cinza); /* Cor do texto principal */
+    background-color: var(--branco); /* Cor de fundo da página */
+}
+
+/* Header */
+header {
+    display: flex; /* Ativa o Flexbox para organizar os elementos */
+    flex-direction: column; /* Coloca os elementos em coluna (mobile-first) */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    padding: 20px; /* Adiciona espaçamento interno ao header */
+}
+
+header img {
+    width: 80px; /* Define o tamanho do logo */
+    margin-bottom: 10px; /* Adiciona espaço abaixo do logo */
+}
+
+nav ul {
+    list-style-type: none; /* Remove os marcadores de lista */
+    display: flex; /* Ativa o Flexbox para alinhar os links */
+    flex-direction: column; /* Coloca os links em coluna (mobile-first) */
+    gap: 10px; /* Adiciona espaço entre os links */
+    text-align: center; /* Centraliza o texto dos links */
+}
+
+nav a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: var(--cinza); /* Define a cor do texto dos links */
+    font-family: var(--font-titulo); /* Usa a fonte de títulos para os links */
+    font-size: 1rem; /* Define o tamanho do texto dos links */
+    transition: color 0.3s ease; /* Adiciona uma transição suave ao passar o mouse */
+    margin: 20px; /* Adiciona margem ao redor dos links */
+}
+
+nav a:hover {
+    background-color: var(--destaque); /* Muda a cor de fundo ao passar o mouse */
+    padding: 5px; /* Adiciona preenchimento ao link */
+    border-radius: 10px; /* Arredonda as bordas do link */
+}
+
+/* Banner */
+.sessao-banner {
+    position: relative; /* Permite posicionar elementos dentro do banner */
+    width: 100%; /* O banner ocupa toda a largura da tela */
+    overflow: hidden; /* Garante que nenhum conteúdo fique fora do container */
+}
+
+.sessao-banner img {
+    width: 100%; /* A imagem ocupa toda a largura do banner */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaçamento indesejado abaixo da imagem */
+}
+
+#banner-texto {
+    position: absolute; /* Posiciona o texto em relação ao banner */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-20%, -50%); /* Ajusta o centro exato */
+    text-align: end; /* Centraliza o texto na direita */
+    color: var(--branco); /* Define a cor do texto como branco */
+    z-index: 2; /* Garante que o texto fique acima da imagem */
+}
+
+#banner-texto h1 {
+    font-family: var(--font-titulo); /* Usa a fonte de títulos */
+    font-size: 1.8rem; /* Define o tamanho do título */
+    margin-bottom: 10px; /* Adiciona espaço abaixo do título */
+}
+
+#banner-texto a {
+    background-color: var(--destaque); /* Cor de fundo do botão */
+    color: var(--cinza); /* Cor do texto do botão */
+    padding: 10px 20px; /* Adiciona preenchimento ao botão */
+    text-decoration: none; /* Remove sublinhado do botão */
+    border-radius: 5px; /* Arredonda as bordas do botão */
+    font-family: var(--font-titulo); /* Usa a fonte de títulos */
+    font-size: 1rem; /* Define o tamanho do texto do botão */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave ao passar o mouse */
+}
+
+#banner-texto a:hover {
+    background-color: var(--rosa); /* Muda a cor de fundo ao passar o mouse */
+}
+
+/* Sobre Nós */
+.sobre-nos {
+    display: flex; /* Ativa o Flexbox para organizar os elementos */
+    flex-direction: column; /* Coloca os elementos em coluna (mobile-first) */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    padding: 40px 20px; /* Adiciona espaçamento interno à seção */
+    text-align: center; /* Centraliza o texto */
+    background-color: var(--branco); /* Define a cor de fundo */
+}
+
+.sobre-nos article {
+    margin-bottom: 20px; /* Adiciona espaço abaixo do texto */
+}
+
+.sobre-nos h2 {
+    font-family: var(--font-titulo); /* Usa a fonte de títulos */
+    font-size: 1.6rem; /* Define o tamanho do título */
+    margin-bottom: 15px; /* Adiciona espaço abaixo do título */
+}
+
+.sobre-nos p {
+    font-size: 1rem; /* Define o tamanho do texto */
+    max-width: 800px; /* Limita a largura máxima do texto */
+    margin: 0 auto; /* Centraliza o texto horizontalmente */
+}
+
+.sobre-nos img {
+    width: 100%; /* A imagem ocupa toda a largura da seção */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 20px; /* Arredonda as bordas da imagem */
+}
+
+/* Abra seu Coração */
+section:nth-of-type(3) {
+    display: flex; /* Ativa o Flexbox para organizar os elementos */
+    flex-direction: column; /* Coloca os elementos em coluna (mobile-first) */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    padding: 40px 20px; /* Adiciona espaçamento interno à seção */
+    background-color: var(--rosa); /* Define a cor de fundo */
+}
+
+section:nth-of-type(3) li {
+    list-style-type: none; /* Remove os marcadores de lista */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Adiciona espaço entre os itens */
+    padding: 20px; /* Adiciona preenchimento aos itens */
+}
+
+section:nth-of-type(3) i {
+    font-size: 2rem; /* Define o tamanho dos ícones */
+    color: var(--verde); /* Define a cor dos ícones */
+    margin-bottom: 10px; /* Adiciona espaço abaixo dos ícones */
+}
+
+section:nth-of-type(3) h3 {
+    font-family: var(--font-titulo); /* Usa a fonte de títulos */
+    font-size: 1.2rem; /* Define o tamanho do título */
+    color: var(--cinza); /* Define a cor do texto */
+}
+
+/* Depoimentos */
+section:nth-of-type(4) {
+    padding: 40px 20px; /* Adiciona espaçamento interno à seção */
+    background-color: var(--branco); /* Define a cor de fundo */
+    text-align: center; /* Centraliza o texto */
+}
+
+section:nth-of-type(4) h2 {
+    font-family: var(--font-titulo); /* Usa a fonte de títulos */
+    font-size: 1.6rem; /* Define o tamanho do título */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+}
+
+section:nth-of-type(4) p {
+    font-size: 1rem; /* Define o tamanho do texto */
+    max-width: 800px; /* Limita a largura máxima do texto */
+    margin: 0 auto 20px auto; /* Centraliza o texto e adiciona espaço abaixo */
+}
+
+section:nth-of-type(4) article {
+    display: flex; /* Ativa o Flexbox para organizar os cards */
+    flex-wrap: wrap; /* Permite que os cards sejam organizados em várias linhas */
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    gap: 20px; /* Adiciona espaço entre os cards */
+}
+
+section:nth-of-type(4) div {
+    background-color: var(--rosa); /* Define a cor de fundo dos cards */
+    padding: 20px; /* Adiciona preenchimento aos cards */
+    border-radius: 10px; /* Arredonda as bordas dos cards */
+    width: 100%; /* Os cards ocupam toda a largura no mobile */
+    text-align: center; /* Centraliza o texto nos cards */
+}
+
+section:nth-of-type(4) img {
+    width: 80px; /* Define o tamanho das imagens */
+    height: 80px; /* Mantém a proporção das imagens */
+    border-radius: 50%; /* Arredonda as bordas das imagens */
+    object-fit: cover; /* Garante que as imagens se ajustem bem */
+    margin-bottom: 10px; /* Adiciona espaço abaixo das imagens */
+}
+
+section:nth-of-type(4) h3 {
+    font-family: var(--font-titulo); /* Usa a fonte de títulos */
+    font-size: 1.2rem; /* Define o tamanho do título */
+    color: var(--cinza); /* Define a cor do texto */
+}
+
+section:nth-of-type(4) p {
+    font-size: 0.9rem; /* Define o tamanho do texto */
+    color: var(--cinza); /* Define a cor do texto */
+}
+
+/* Contato */
+section:nth-of-type(6) {
+    padding: 40px 20px; /* Adiciona espaçamento interno à seção */
+    text-align: center; /* Centraliza o texto */
+}
+
+section:nth-of-type(6) h2 {
+    font-family: var(--font-titulo); /* Usa a fonte de títulos */
+    font-size: 1.6rem; /* Define o tamanho do título */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+}
+
+form {
+    display: flex; /* Ativa o Flexbox para organizar os campos do formulário */
+    flex-direction: column; /* Coloca os campos em coluna (mobile-first) */
+    gap: 15px; /* Adiciona espaço entre os campos */
+    max-width: 600px; /* Limita a largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o formulário horizontalmente */
+}
+
+form label {
+    font-family: var(--font-titulo); /* Usa a fonte de títulos */
+    font-size: 1rem; /* Define o tamanho do texto */
+}
+
+form input,
+form textarea {
+    padding: 10px; /* Adiciona preenchimento aos campos */
+    border: 2px solid var(--destaque); /* Define a cor da borda */
+    border-radius: 10px; /* Arredonda as bordas dos campos */
+    font-size: 1rem; /* Define o tamanho do texto */
+    color: var(--cinza); /* Define a cor do texto */
+    background-color: var(--branco); /* Define a cor de fundo */
+}
+
+form input[type="submit"] {
+    background-color: var(--destaque); /* Cor de fundo do botão de envio */
+    color: var(--branco); /* Cor do texto do botão */
+    border: none; /* Remove a borda */
+    padding: 10px; /* Adiciona preenchimento ao botão */
+    border-radius: 5px; /* Arredonda as bordas do botão */
+    cursor: pointer; /* Altera o cursor ao passar o mouse */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave ao passar o mouse */
+}
+
+form input[type="submit"]:hover {
+    background-color: var(--rosa); /* Muda a cor de fundo ao passar o mouse */
+    color: var(--cinza); /* Muda a cor do texto ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+    padding: 20px; /* Adiciona espaçamento interno ao rodapé */
+    background-color: var(--verde); /* Define a cor de fundo */
+    color: var(--branco); /* Define a cor do texto */
+    text-align: center; /* Centraliza o texto */
+}
+
+footer h3 {
+    font-family: var(--font-titulo); /* Usa a fonte de títulos */
+    font-size: 1.2rem; /* Define o tamanho do título */
+    margin-bottom: 10px; /* Adiciona espaço abaixo do título */
+}
+
+footer div {
+    margin-bottom: 10px; /* Adiciona espaço abaixo dos links */
+}
+
+footer a {
+    color: var(--branco); /* Define a cor do texto dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    transition: color 0.3s ease; /* Adiciona uma transição suave ao passar o mouse */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Sublinha os links ao passar o mouse */
+}
+
+.assinatura {
+    font-size: 0.9rem; /* Define o tamanho do texto */
+    text-align: end; /* Alinha o texto à direita */
+    padding: 10px; /* Adiciona preenchimento */
+    color: var(--verde); /* Define a cor do texto */
+}
+
+/* MODO DESKTOP */
+@media (min-width: 768px) {
+
+    /* Header */
+    header {
+        flex-direction: row; /* Coloca os elementos em linha */
+        justify-content: space-between; /* Distribui os elementos com espaço entre eles */
+    }
+
+    header img {
+        width: 100px; /* Aumenta o tamanho do logo */
+        margin-bottom: 0; /* Remove o espaço abaixo do logo */
+    }
+
+    nav ul {
+        flex-direction: row; /* Coloca os links em linha */
+        gap: 20px; /* Adiciona espaço entre os links */
+    }
+
+    /* Banner */
+    #banner-texto h1 {
+        font-size: 3rem; /* Aumenta o tamanho do título */
+    }
+
+    /* Sobre Nós */
+    .sobre-nos {
+        flex-direction: row; /* Coloca os elementos em linha */
+        justify-content: space-between; /* Distribui os elementos com espaço entre eles */
+        align-items: center; /* Centraliza os elementos verticalmente */
+        padding: 40px 20px; /* Adiciona espaçamento interno à seção */
+    }
+
+    .sobre-nos img {
+        width: 400px; /* Reduz o tamanho da imagem */
+        height: auto; /* Mantém a proporção da imagem */
+
+    }
+
+    .sobre-nos article {
+        height: 80%; /* O texto ocupa 70% do espaço */
+    }
+
+    .sobre-nos h2 {
+        font-size: 2rem; /* Aumenta o tamanho do título */
+    }
+
+    .sobre-nos p {
+        font-size: 1.1rem; /* Aumenta o tamanho do texto */
+    }
+
+    /* Abra seu Coração */
+    section {
+        flex-direction: row; /* Coloca os elementos em linha */
+        justify-content: space-around; /* Distribui os elementos com espaço entre eles */
+    }
+
+    section:nth-of-type(3) li {
+        margin-bottom: 0; /* Remove o espaço entre os itens */
+    }
+
+    section:nth-of-type(3) i {
+        font-size: 2.5rem; /* Aumenta o tamanho dos ícones */
+    }
+
+    section:nth-of-type(3) h3 {
+        font-size: 1.4rem; /* Aumenta o tamanho do título */
+    }
+
+    /* Depoimentos */
+    section:nth-of-type(4) div {
+        width: calc(50% - 10px); /* Os cards ocupam metade da largura menos 10px */
+    }
+
+    section:nth-of-type(4) img {
+        width: 100px; /* Aumenta o tamanho das imagens */
+        height: 100px; /* Mantém a proporção das imagens */
+    }
+
+    section:nth-of-type(4) h3 {
+        font-size: 1.4rem; /* Aumenta o tamanho do título */
+    }
+
+    /* Contato */
+    section:nth-of-type(6) h2 {
+        font-size: 2rem; /* Aumenta o tamanho do título */
+    }
+}
