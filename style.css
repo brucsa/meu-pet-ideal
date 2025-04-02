@@ -50,7 +50,7 @@ nav a {
     text-decoration: none; /* Remove sublinhado dos links */
     color: var(--cinza); /* Define a cor do texto dos links */
     font-family: var(--font-titulo); /* Usa a fonte de títulos para os links */
-    font-size: 1rem; /* Define o tamanho do texto dos links */
+    font-size: 0.7rem; /* Define o tamanho do texto dos links */
     transition: color 0.3s ease; /* Adiciona uma transição suave ao passar o mouse */
     margin: 20px; /* Adiciona margem ao redor dos links */
 }
