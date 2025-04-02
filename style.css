@@ -12,7 +12,6 @@
     --verde: #4c9986; /* Cor terciária (verde mint) */
     --destaque: #ffb480; /* Cor de destaque (laranja claro) */
     --cinza: #333; /* Cor do texto principal */
-    --h1: 2rem; /* Tamanho padrão para títulos h1 */
     --font-titulo: "Poppins", sans-serif; /* Fonte usada para títulos */
     --font-texto: "Open Sans", sans-serif; /* Fonte usada para textos */
 }
@@ -326,6 +325,10 @@ footer a:hover {
         font-size: 3rem; /* Aumenta o tamanho do título */
     }
 
+#banner-texto a {
+    font-size: 1rem; /* Define o tamanho do texto do botão */
+}
+    
     /* Sobre Nós */
     .sobre-nos {
         flex-direction: row; /* Coloca os elementos em linha */
