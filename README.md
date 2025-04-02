@@ -6,7 +6,7 @@ O objetivo deste projeto é destacar a importância da adoção responsável e p
 
 Demo Online 🌐
 Você pode visualizar uma demo funcional do projeto aqui:
-👉
+👉 https://brucsa.github.io/meu-pet-ideal/
 
 Tecnologias Utilizadas 💻
 Este projeto foi desenvolvido utilizando as seguintes tecnologias:
