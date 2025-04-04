@@ -12,6 +12,7 @@
     --verde: #4c9986; /* Cor terciária (verde mint) */
     --destaque: #ffb480; /* Cor de destaque (laranja claro) */
     --cinza: #333; /* Cor do texto principal */
+    --h1: 2rem; /* Tamanho padrão para títulos h1 */
     --font-titulo: "Poppins", sans-serif; /* Fonte usada para títulos */
     --font-texto: "Open Sans", sans-serif; /* Fonte usada para textos */
 }
@@ -76,9 +77,9 @@ nav a:hover {
     position: absolute; /* Posiciona o texto em relação ao banner */
     top: 50%; /* Centraliza verticalmente */
     left: 50%; /* Centraliza horizontalmente */
-    transform: translate(-20%, -50%); /* Ajusta o texto */
+    transform: translate(-20%, -50%); /* Ajusta o centro exato */
     text-align: end; /* Centraliza o texto na direita */
-    color: var(--branco); /* Define a cor do texto como branco */
+    color: var(--cinza); /* Define a cor do texto como branco */
     z-index: 2; /* Garante que o texto fique acima da imagem */
 }
 
@@ -103,8 +104,8 @@ nav a:hover {
     background-color: var(--rosa); /* Muda a cor de fundo ao passar o mouse */
 }
 
-/* Sobre Nós */
-.sobre-nos {
+/* proposito */
+.proposito {
     display: flex; /* Ativa o Flexbox para organizar os elementos */
     flex-direction: column; /* Coloca os elementos em coluna (mobile-first) */
     align-items: center; /* Centraliza os itens horizontalmente */
@@ -113,35 +114,35 @@ nav a:hover {
     background-color: var(--branco); /* Define a cor de fundo */
 }
 
-.sobre-nos article {
+.proposito article {
     margin-bottom: 20px; /* Adiciona espaço abaixo do texto */
 }
 
-.sobre-nos h2 {
+.proposito h2 {
     font-family: var(--font-titulo); /* Usa a fonte de títulos */
     font-size: 1.6rem; /* Define o tamanho do título */
     margin-bottom: 15px; /* Adiciona espaço abaixo do título */
 }
 
-.sobre-nos p {
+.proposito p {
     font-size: 1rem; /* Define o tamanho do texto */
     max-width: 800px; /* Limita a largura máxima do texto */
     margin: 0 auto; /* Centraliza o texto horizontalmente */
 }
 
-.sobre-nos img {
+.proposito img {
     width: 100%; /* A imagem ocupa toda a largura da seção */
     height: auto; /* Mantém a proporção da imagem */
     border-radius: 20px; /* Arredonda as bordas da imagem */
 }
 
-/* Abra seu Coração */
+/* motivos */
 section:nth-of-type(3) {
     display: flex; /* Ativa o Flexbox para organizar os elementos */
     flex-direction: column; /* Coloca os elementos em coluna (mobile-first) */
     align-items: center; /* Centraliza os itens horizontalmente */
     padding: 40px 20px; /* Adiciona espaçamento interno à seção */
-    background-color: var(--rosa); /* Define a cor de fundo */
+
 }
 
 section:nth-of-type(3) li {
@@ -325,37 +326,33 @@ footer a:hover {
         font-size: 3rem; /* Aumenta o tamanho do título */
     }
 
-#banner-texto a {
-    font-size: 1rem; /* Define o tamanho do texto do botão */
-}
-    
-    /* Sobre Nós */
-    .sobre-nos {
+    /* proposito */
+    .proposito {
         flex-direction: row; /* Coloca os elementos em linha */
         justify-content: space-between; /* Distribui os elementos com espaço entre eles */
         align-items: center; /* Centraliza os elementos verticalmente */
         padding: 40px 20px; /* Adiciona espaçamento interno à seção */
     }
 
-    .sobre-nos img {
+    .proposito img {
         width: 400px; /* Reduz o tamanho da imagem */
         height: auto; /* Mantém a proporção da imagem */
 
     }
 
-    .sobre-nos article {
+    .proposito article {
         height: 80%; /* O texto ocupa 70% do espaço */
     }
 
-    .sobre-nos h2 {
+    .proposito h2 {
         font-size: 2rem; /* Aumenta o tamanho do título */
     }
 
-    .sobre-nos p {
+    .proposito p {
         font-size: 1.1rem; /* Aumenta o tamanho do texto */
     }
 
-    /* Abra seu Coração */
+    /* motivos */
     section {
         flex-direction: row; /* Coloca os elementos em linha */
         justify-content: space-around; /* Distribui os elementos com espaço entre eles */
@@ -373,7 +370,7 @@ footer a:hover {
         font-size: 1.4rem; /* Aumenta o tamanho do título */
     }
 
-    /* Depoimentos */
+    /* adotados */
     section:nth-of-type(4) div {
         width: calc(50% - 10px); /* Os cards ocupam metade da largura menos 10px */
     }
