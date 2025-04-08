@@ -39,12 +39,21 @@ Este projeto também faz parte da minha jornada de aprendizado em **desenvolvime
 ## 📂 Estrutura do Projeto
 
 📦 /meu-pet-ideal
+
 │
+
 ├── index.html # Página principal (HTML)
+
 ├── style.css # Arquivo de estilo principal (CSS)
+
 ├── Imagens/ # Pasta com as imagens do projeto
+
 │ ├── logo.png # Logo do site
+
 │ ├── banner.jpg # Imagem do banner
+
 │ └── outros/ # Outras imagens (pets, ícones, etc.)
+
 └── README.md # Documentação do projeto
+
  
